@@ -1,0 +1,12 @@
+{
+  "ticker": "NBIS",
+  "window_id": "2021-11-01_2026-05-01",
+  "T": 382,
+  "start_date": "2024-10-21",
+  "end_date": "2026-04-30",
+  "min_window": 38,
+  "M": 60,
+  "R": 30,
+  "bridge_days": 90,
+  "episode": null
+}

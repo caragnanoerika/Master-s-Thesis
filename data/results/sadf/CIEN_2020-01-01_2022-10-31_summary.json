@@ -1,0 +1,16 @@
+{
+  "ticker": "CIEN",
+  "T": 714,
+  "start_date": "2020-01-02",
+  "end_date": "2022-10-31",
+  "statistic": -0.44809035874147063,
+  "argmax_date": "2020-06-03",
+  "cv_5pct": 1.49,
+  "signal": false,
+  "min_window": 55,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

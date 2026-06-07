@@ -1,0 +1,61 @@
+{
+  "ticker": "NASDAQ_dotcom",
+  "T": 3531,
+  "start_date": "1990-01-02",
+  "end_date": "2003-12-30",
+  "min_window": 142,
+  "statistic": 7.038122812509946,
+  "cv_value": 2.4676994733403017,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "1990-08-06T00:00:00",
+      "end": "1990-11-09T00:00:00",
+      "duration_days": 95,
+      "start_idx": 9,
+      "end_idx": 77
+    },
+    {
+      "start": "1991-02-26T00:00:00",
+      "end": "1992-03-26T00:00:00",
+      "duration_days": 394,
+      "start_idx": 150,
+      "end_idx": 424
+    },
+    {
+      "start": "1992-11-13T00:00:00",
+      "end": "1993-03-15T00:00:00",
+      "duration_days": 122,
+      "start_idx": 586,
+      "end_idx": 668
+    },
+    {
+      "start": "1993-08-18T00:00:00",
+      "end": "1994-03-18T00:00:00",
+      "duration_days": 212,
+      "start_idx": 777,
+      "end_idx": 925
+    },
+    {
+      "start": "1995-05-03T00:00:00",
+      "end": "1998-08-26T00:00:00",
+      "duration_days": 1211,
+      "start_idx": 1208,
+      "end_idx": 2046
+    },
+    {
+      "start": "1998-11-04T00:00:00",
+      "end": "2000-09-22T00:00:00",
+      "duration_days": 688,
+      "start_idx": 2095,
+      "end_idx": 2570
+    }
+  ]
+}

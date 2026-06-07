@@ -1,0 +1,19 @@
+{
+  "ticker": "STX",
+  "window_id": "2021-11-01_2026-05-01",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "min_window": 112,
+  "M": 60,
+  "R": 30,
+  "bridge_days": 90,
+  "episode": {
+    "start_idx": 915,
+    "end_idx": 1127,
+    "collapse_type": "end_of_sample",
+    "start": "2025-06-26T00:00:00",
+    "end": "2026-04-30T00:00:00",
+    "duration_days": 308
+  }
+}

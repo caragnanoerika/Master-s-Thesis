@@ -1,0 +1,24 @@
+{
+  "ticker": "GLD",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 5.175507587398174,
+  "argmax_date": "2026-01-29",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 71,
+  "episodes": [
+    {
+      "start": "2025-09-05",
+      "end": "2026-03-17",
+      "duration_days": 193,
+      "start_idx": 894,
+      "end_idx": 1026
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

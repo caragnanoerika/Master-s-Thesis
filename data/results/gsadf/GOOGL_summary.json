@@ -1,0 +1,33 @@
+{
+  "ticker": "GOOGL",
+  "T": 1842,
+  "start_date": "2019-01-02",
+  "end_date": "2026-04-30",
+  "min_window": 95,
+  "statistic": 2.746351596690522,
+  "cv_value": 2.389961828908242,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2021-04-09T00:00:00",
+      "end": "2021-12-10T00:00:00",
+      "duration_days": 245,
+      "start_idx": 477,
+      "end_idx": 648
+    },
+    {
+      "start": "2025-09-03T00:00:00",
+      "end": "2026-04-30T00:00:00",
+      "duration_days": 239,
+      "start_idx": 1582,
+      "end_idx": 1747
+    }
+  ]
+}

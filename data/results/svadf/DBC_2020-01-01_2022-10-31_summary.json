@@ -1,0 +1,19 @@
+{
+  "ticker": "DBC",
+  "window_id": "2020-01-01_2022-10-31",
+  "T": 714,
+  "start_date": "2020-01-02",
+  "end_date": "2022-10-31",
+  "min_window": 71,
+  "M": 60,
+  "R": 30,
+  "bridge_days": 90,
+  "episode": {
+    "start_idx": 515,
+    "end_idx": 577,
+    "collapse_type": "post_bridge",
+    "start": "2022-01-18T00:00:00",
+    "end": "2022-04-18T00:00:00",
+    "duration_days": 90
+  }
+}

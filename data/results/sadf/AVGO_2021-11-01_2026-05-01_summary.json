@@ -1,0 +1,24 @@
+{
+  "ticker": "AVGO",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 2.7862840594709826,
+  "argmax_date": "2024-06-17",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 71,
+  "episodes": [
+    {
+      "start": "2025-09-08",
+      "end": "2025-12-11",
+      "duration_days": 94,
+      "start_idx": 895,
+      "end_idx": 962
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

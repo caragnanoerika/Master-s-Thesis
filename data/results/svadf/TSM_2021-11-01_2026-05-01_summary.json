@@ -1,0 +1,19 @@
+{
+  "ticker": "TSM",
+  "window_id": "2021-11-01_2026-05-01",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "min_window": 112,
+  "M": 60,
+  "R": 30,
+  "bridge_days": 90,
+  "episode": {
+    "start_idx": 966,
+    "end_idx": 1029,
+    "collapse_type": "post_bridge",
+    "start": "2025-09-09T00:00:00",
+    "end": "2025-12-08T00:00:00",
+    "duration_days": 90
+  }
+}

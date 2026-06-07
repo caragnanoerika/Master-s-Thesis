@@ -1,0 +1,16 @@
+{
+  "ticker": "COW",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 0.38724433196310126,
+  "argmax_date": "2022-02-22",
+  "cv_5pct": 1.49,
+  "signal": false,
+  "min_window": 71,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

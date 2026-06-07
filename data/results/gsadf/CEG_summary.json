@@ -1,0 +1,33 @@
+{
+  "ticker": "CEG",
+  "T": 1074,
+  "start_date": "2022-01-19",
+  "end_date": "2026-04-30",
+  "min_window": 69,
+  "statistic": 3.05019858755069,
+  "cv_value": 2.3368452640904014,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 99,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2023-06-01T00:00:00",
+      "end": "2023-11-28T00:00:00",
+      "duration_days": 180,
+      "start_idx": 275,
+      "end_idx": 399
+    },
+    {
+      "start": "2024-02-27T00:00:00",
+      "end": "2024-07-15T00:00:00",
+      "duration_days": 139,
+      "start_idx": 460,
+      "end_idx": 555
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+"""
+Gradio app scaffold for the AI Bubble Detection Hugging Face Space.
+
+Rename to `app.py` when deploying to a HF Space.  This app only reads
+pre-computed results from `data/results/`; it does not run any analysis.
+
+To run locally:
+    pip install gradio
+    python app/gradio_app.py.example
+"""
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+import gradio as gr  # noqa: E402
+import pandas as pd  # noqa: E402
+
+from config import settings  # noqa: E402
+from src import api          # noqa: E402
+
+
+# ── Discovery ────────────────────────────────────────────────────────────────
+def get_tickers():
+    return api.list_tickers() or settings.ALL_TICKERS
+
+
+def get_windows_for(ticker):
+    wins = api.list_svadf_windows_for(ticker)
+    if not wins:
+        return gr.update(choices=[], value=None)
+    formatted = [f"{w[0]} → {w[1]}" for w in wins]
+    return gr.update(choices=formatted, value=formatted[-1])
+
+
+def _parse_window(s: str) -> tuple[str, str] | None:
+    if not s or " → " not in s:
+        return None
+    a, b = s.split(" → ")
+    return a.strip(), b.strip()
+
+
+# ── Outputs ──────────────────────────────────────────────────────────────────
+def render_comparison(ticker, window_str):
+    """GSADF vs SV-ADF comparison figure."""
+    if not ticker:
+        return None
+    window = _parse_window(window_str)
+    return api.get_comparison_figure(ticker, svadf_window=window)
+
+
+def render_svadf_only(ticker, window_str):
+    if not ticker:
+        return None
+    window = _parse_window(window_str)
+    return api.get_svadf_figure(ticker, window=window)
+
+
+def render_gsadf_only(ticker):
+    if not ticker:
+        return None
+    return api.get_gsadf_figure(ticker)
+
+
+def get_summary(ticker):
+    rows = []
+    st = api.get_stationarity(ticker)
+    if st:
+        rows.append(["ADF reject",  "yes" if st["adf"]["reject_5pct"]  else "no"])
+        rows.append(["PP reject",   "yes" if st["pp"]["reject_5pct"]   else "no"])
+        rows.append(["KPSS reject", "yes" if st["kpss"]["reject_5pct"] else "no"])
+    sa = api.get_sadf(ticker)
+    if sa:
+        rows.append(["SADF stat", f"{sa['statistic']:.2f}"])
+        rows.append(["SADF signal", "yes" if sa["signal"] else "no"])
+    gs = api.get_gsadf(ticker)
+    if gs:
+        s = gs["summary"]
+        rows.append(["GSADF stat", f"{s['statistic']:.2f}"])
+        rows.append(["GSADF reject", "yes" if s["reject"] else "no"])
+        rows.append(["GSADF episodes", str(len(s["episodes"]))])
+    return pd.DataFrame(rows, columns=["Metric", "Value"])
+
+
+# ── Gradio UI ────────────────────────────────────────────────────────────────
+with gr.Blocks(title="AI Bubble Detection") as demo:
+    gr.Markdown("# AI Bubble Detection — Multi-Method Diagnostics")
+    gr.Markdown("Pre-computed results across stationarity tests, SADF, GSADF "
+                "(PSY 2015), and SV-ADF (Sarkar & Wells 2026).")
+
+    with gr.Row():
+        ticker_dd = gr.Dropdown(choices=get_tickers(), label="Ticker",
+                                value=get_tickers()[0] if get_tickers() else None)
+        window_dd = gr.Dropdown(choices=[], label="SV-ADF window")
+
+    ticker_dd.change(fn=get_windows_for, inputs=ticker_dd, outputs=window_dd)
+
+    with gr.Tab("Comparison"):
+        cmp_btn = gr.Button("Render GSADF vs SV-ADF")
+        cmp_fig = gr.Plot()
+        cmp_btn.click(fn=render_comparison, inputs=[ticker_dd, window_dd], outputs=cmp_fig)
+
+    with gr.Tab("GSADF only"):
+        g_btn = gr.Button("Render GSADF diagnostic")
+        g_fig = gr.Plot()
+        g_btn.click(fn=render_gsadf_only, inputs=ticker_dd, outputs=g_fig)
+
+    with gr.Tab("SV-ADF only"):
+        s_btn = gr.Button("Render SV-ADF diagnostic")
+        s_fig = gr.Plot()
+        s_btn.click(fn=render_svadf_only, inputs=[ticker_dd, window_dd], outputs=s_fig)
+
+    with gr.Tab("Summary"):
+        summary_df = gr.Dataframe(label="Cross-method summary")
+        ticker_dd.change(fn=get_summary, inputs=ticker_dd, outputs=summary_df)
+
+    with gr.Tab("Full comparison table"):
+        full_table = gr.Dataframe(value=api.get_comparison_table())
+
+
+if __name__ == "__main__":
+    demo.launch()

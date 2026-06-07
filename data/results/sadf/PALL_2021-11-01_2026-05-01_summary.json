@@ -1,0 +1,16 @@
+{
+  "ticker": "PALL",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 2.4527346600311035,
+  "argmax_date": "2022-03-08",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 71,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "ticker": "DBC",
+  "T": 1842,
+  "start_date": "2019-01-02",
+  "end_date": "2026-04-30",
+  "min_window": 95,
+  "statistic": 3.8152691887026746,
+  "cv_value": 2.437796201686501,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 99,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2021-01-08T00:00:00",
+      "end": "2021-07-30T00:00:00",
+      "duration_days": 203,
+      "start_idx": 415,
+      "end_idx": 555
+    },
+    {
+      "start": "2021-10-04T00:00:00",
+      "end": "2022-07-01T00:00:00",
+      "duration_days": 270,
+      "start_idx": 600,
+      "end_idx": 787
+    },
+    {
+      "start": "2026-01-27T00:00:00",
+      "end": "2026-04-30T00:00:00",
+      "duration_days": 93,
+      "start_idx": 1682,
+      "end_idx": 1747
+    }
+  ]
+}

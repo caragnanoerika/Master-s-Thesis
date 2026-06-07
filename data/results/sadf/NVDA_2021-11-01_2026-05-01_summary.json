@@ -1,0 +1,24 @@
+{
+  "ticker": "NVDA",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 4.365671806920278,
+  "argmax_date": "2024-06-18",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 71,
+  "episodes": [
+    {
+      "start": "2024-02-02",
+      "end": "2024-08-19",
+      "duration_days": 199,
+      "start_idx": 496,
+      "end_idx": 632
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

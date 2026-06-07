@@ -1,0 +1,16 @@
+{
+  "ticker": "GOOGL",
+  "T": 1590,
+  "start_date": "2020-01-02",
+  "end_date": "2026-04-30",
+  "statistic": 2.5206991008982698,
+  "argmax_date": "2026-04-30",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 87,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

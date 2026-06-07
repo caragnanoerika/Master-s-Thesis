@@ -1,0 +1,16 @@
+{
+  "ticker": "NBIS",
+  "T": 382,
+  "start_date": "2024-10-21",
+  "end_date": "2026-04-30",
+  "statistic": 1.8126190445501877,
+  "argmax_date": "2025-10-03",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 39,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

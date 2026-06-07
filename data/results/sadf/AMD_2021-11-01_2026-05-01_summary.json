@@ -1,0 +1,16 @@
+{
+  "ticker": "AMD",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 1.0655201434328263,
+  "argmax_date": "2026-04-30",
+  "cv_5pct": 1.49,
+  "signal": false,
+  "min_window": 71,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

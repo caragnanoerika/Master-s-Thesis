@@ -1,0 +1,26 @@
+{
+  "ticker": "NBIS",
+  "T": 382,
+  "start_date": "2024-10-21",
+  "end_date": "2026-04-30",
+  "min_window": 39,
+  "statistic": 1.8545783513512324,
+  "cv_value": 2.179244792742759,
+  "cv_quantile": 0.95,
+  "reject": false,
+  "mc_reps": 99,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2025-05-14T00:00:00",
+      "end": "2025-10-31T00:00:00",
+      "duration_days": 170,
+      "start_idx": 102,
+      "end_idx": 220
+    }
+  ]
+}

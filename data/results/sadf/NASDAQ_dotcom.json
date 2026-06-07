@@ -1,0 +1,11 @@
+{
+  "ticker": "NASDAQ_dotcom",
+  "T": 7818,
+  "start_date": "1982-01-04",
+  "end_date": "2012-12-28",
+  "statistic": 9.508269709342203,
+  "argmax_date": "2000-03-09",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 237
+}

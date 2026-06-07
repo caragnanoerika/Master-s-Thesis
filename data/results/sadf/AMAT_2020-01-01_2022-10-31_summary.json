@@ -1,0 +1,16 @@
+{
+  "ticker": "AMAT",
+  "T": 714,
+  "start_date": "2020-01-02",
+  "end_date": "2022-10-31",
+  "statistic": 1.4062125864669066,
+  "argmax_date": "2021-04-05",
+  "cv_5pct": 1.49,
+  "signal": false,
+  "min_window": 55,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

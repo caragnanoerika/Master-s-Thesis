@@ -1,0 +1,47 @@
+{
+  "ticker": "SP500_dotcom",
+  "T": 2266,
+  "start_date": "1995-01-03",
+  "end_date": "2003-12-30",
+  "min_window": 108,
+  "statistic": 2.316625316875397,
+  "cv_value": 2.162400580787647,
+  "cv_quantile": 0.9,
+  "reject": true,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "1995-06-06T00:00:00",
+      "end": "1995-09-20T00:00:00",
+      "duration_days": 106,
+      "start_idx": 0,
+      "end_idx": 74
+    },
+    {
+      "start": "1995-12-04T00:00:00",
+      "end": "1996-03-05T00:00:00",
+      "duration_days": 92,
+      "start_idx": 126,
+      "end_idx": 189
+    },
+    {
+      "start": "1996-11-06T00:00:00",
+      "end": "1997-10-22T00:00:00",
+      "duration_days": 350,
+      "start_idx": 361,
+      "end_idx": 603
+    },
+    {
+      "start": "1998-02-26T00:00:00",
+      "end": "1998-08-31T00:00:00",
+      "duration_days": 186,
+      "start_idx": 689,
+      "end_idx": 818
+    }
+  ]
+}

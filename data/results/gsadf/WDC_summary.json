@@ -1,0 +1,33 @@
+{
+  "ticker": "WDC",
+  "T": 1842,
+  "start_date": "2019-01-02",
+  "end_date": "2026-04-30",
+  "min_window": 95,
+  "statistic": 8.494036052944061,
+  "cv_value": 2.389961828908242,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2024-01-25T00:00:00",
+      "end": "2024-07-10T00:00:00",
+      "duration_days": 167,
+      "start_idx": 1180,
+      "end_idx": 1294
+    },
+    {
+      "start": "2025-07-30T00:00:00",
+      "end": "2026-04-30T00:00:00",
+      "duration_days": 274,
+      "start_idx": 1558,
+      "end_idx": 1747
+    }
+  ]
+}

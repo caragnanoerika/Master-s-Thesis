@@ -1,0 +1,33 @@
+{
+  "ticker": "SOYB",
+  "T": 1842,
+  "start_date": "2019-01-02",
+  "end_date": "2026-04-30",
+  "min_window": 95,
+  "statistic": 3.822685159776912,
+  "cv_value": 2.437796201686501,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 99,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2020-09-08T00:00:00",
+      "end": "2021-08-18T00:00:00",
+      "duration_days": 344,
+      "start_idx": 330,
+      "end_idx": 568
+    },
+    {
+      "start": "2022-01-31T00:00:00",
+      "end": "2022-06-22T00:00:00",
+      "duration_days": 142,
+      "start_idx": 682,
+      "end_idx": 780
+    }
+  ]
+}

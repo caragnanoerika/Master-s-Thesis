@@ -1,0 +1,19 @@
+{
+  "ticker": "NASDAQ_dotcom_alt",
+  "window_id": "1990-01-01_2003-12-31",
+  "T": 3531,
+  "start_date": "1990-01-02",
+  "end_date": "2003-12-30",
+  "min_window": 353,
+  "M": 176,
+  "R": 176,
+  "bridge_days": 247,
+  "episode": {
+    "start_idx": 1855,
+    "end_idx": 2025,
+    "collapse_type": "post_bridge",
+    "start": "1997-05-02T00:00:00",
+    "end": "1998-01-05T00:00:00",
+    "duration_days": 248
+  }
+}

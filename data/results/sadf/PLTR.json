@@ -1,0 +1,31 @@
+{
+  "ticker": "PLTR",
+  "T": 1402,
+  "start_date": "2020-09-30",
+  "end_date": "2026-04-30",
+  "statistic": 6.000568197088649,
+  "argmax_date": "2025-02-18",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 81,
+  "episodes": [
+    {
+      "start": "2024-11-11",
+      "end": "2025-02-21",
+      "duration_days": 102,
+      "start_idx": 955,
+      "end_idx": 1023
+    },
+    {
+      "start": "2025-04-25",
+      "end": "2025-12-24",
+      "duration_days": 243,
+      "start_idx": 1067,
+      "end_idx": 1235
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

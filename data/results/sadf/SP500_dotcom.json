@@ -1,0 +1,11 @@
+{
+  "ticker": "SP500_dotcom",
+  "T": 2266,
+  "start_date": "1995-01-03",
+  "end_date": "2003-12-30",
+  "statistic": 1.1612040980214053,
+  "argmax_date": "1997-08-06",
+  "cv_5pct": 1.49,
+  "signal": false,
+  "min_window": 108
+}

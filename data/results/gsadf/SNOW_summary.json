@@ -1,0 +1,18 @@
+{
+  "ticker": "SNOW",
+  "T": 1412,
+  "start_date": "2020-09-16",
+  "end_date": "2026-04-30",
+  "min_window": 81,
+  "statistic": 0.9728535132491414,
+  "cv_value": 2.3586442666524325,
+  "cv_quantile": 0.95,
+  "reject": false,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": []
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "TSLA",
+  "T": 1842,
+  "start_date": "2019-01-02",
+  "end_date": "2026-04-30",
+  "min_window": 95,
+  "statistic": 7.83321874592293,
+  "cv_value": 2.389961828908242,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": [
+    {
+      "start": "2019-10-25T00:00:00",
+      "end": "2020-03-05T00:00:00",
+      "duration_days": 132,
+      "start_idx": 112,
+      "end_idx": 201
+    },
+    {
+      "start": "2020-06-08T00:00:00",
+      "end": "2021-04-13T00:00:00",
+      "duration_days": 309,
+      "start_idx": 266,
+      "end_idx": 479
+    }
+  ]
+}

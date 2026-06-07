@@ -1,0 +1,16 @@
+{
+  "ticker": "CRWV",
+  "T": 274,
+  "start_date": "2025-03-28",
+  "end_date": "2026-04-30",
+  "statistic": 2.0454959849117373,
+  "argmax_date": "2025-06-04",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 32,
+  "episodes": [],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

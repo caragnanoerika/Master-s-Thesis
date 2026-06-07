@@ -1,0 +1,31 @@
+{
+  "ticker": "VST",
+  "T": 1590,
+  "start_date": "2020-01-02",
+  "end_date": "2026-04-30",
+  "statistic": 8.492186392248716,
+  "argmax_date": "2024-05-28",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 87,
+  "episodes": [
+    {
+      "start": "2024-02-16",
+      "end": "2024-07-16",
+      "duration_days": 151,
+      "start_idx": 952,
+      "end_idx": 1054
+    },
+    {
+      "start": "2024-09-17",
+      "end": "2025-02-06",
+      "duration_days": 142,
+      "start_idx": 1098,
+      "end_idx": 1195
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

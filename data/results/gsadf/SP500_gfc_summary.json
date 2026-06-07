@@ -1,0 +1,18 @@
+{
+  "ticker": "SP500_gfc",
+  "T": 2014,
+  "start_date": "2003-01-02",
+  "end_date": "2010-12-30",
+  "min_window": 100,
+  "statistic": 1.6762055593984684,
+  "cv_value": 2.1730180380455324,
+  "cv_quantile": 0.9,
+  "reject": false,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": []
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "ASX",
+  "T": 1128,
+  "start_date": "2021-11-01",
+  "end_date": "2026-04-30",
+  "statistic": 5.620156264485269,
+  "argmax_date": "2026-04-24",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 71,
+  "episodes": [
+    {
+      "start": "2026-01-13",
+      "end": "2026-04-30",
+      "duration_days": 107,
+      "start_idx": 983,
+      "end_idx": 1057
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

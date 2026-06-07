@@ -1,0 +1,24 @@
+{
+  "ticker": "CEG",
+  "T": 1074,
+  "start_date": "2022-01-19",
+  "end_date": "2026-04-30",
+  "statistic": 2.542021802198052,
+  "argmax_date": "2024-05-24",
+  "cv_5pct": 1.49,
+  "signal": true,
+  "min_window": 69,
+  "episodes": [
+    {
+      "start": "2024-03-04",
+      "end": "2024-05-31",
+      "duration_days": 88,
+      "start_idx": 464,
+      "end_idx": 526
+    }
+  ],
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  }
+}

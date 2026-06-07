@@ -1,0 +1,18 @@
+{
+  "ticker": "AI",
+  "T": 1353,
+  "start_date": "2020-12-09",
+  "end_date": "2026-04-30",
+  "min_window": 79,
+  "statistic": 4.332648819936443,
+  "cv_value": 2.3642515588364805,
+  "cv_quantile": 0.95,
+  "reject": true,
+  "mc_reps": 999,
+  "mc_seed": 42,
+  "episode_filters": {
+    "min_duration_days": 60,
+    "merge_gap_days": 42
+  },
+  "episodes": []
+}
