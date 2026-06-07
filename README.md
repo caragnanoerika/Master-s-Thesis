@@ -209,22 +209,6 @@ crossing detection. Tune both in settings without re-running Monte Carlo.
 
 ---
 
-## Key findings (thesis)
-
-- **SV-ADF W1** (post-ChatGPT: Nov 2021 – May 2026) detects explosive episodes
-  in 11 equity tickers across semiconductor, hyperscale, and application-AI
-  segments; zero detections in the W2 pre-ChatGPT window (the AI bubble is a
-  post-ChatGPT phenomenon).
-- **GSADF** (PSY 2015) rejects the global null for the majority of AI-segment
-  tickers and date-stamps multiple distinct episodes, with episode density
-  concentrated post-Q4 2023.
-- **Commodity evidence (H6):** GSADF rejects for all commodity groups, but
-  post-Q4-2023 episode timing and SV-ADF W1 confirmation is confined to
-  precious metals (GLD, SLV) — AI-relevant energy and broad benchmarks show
-  no SV-ADF confirmation.
-
----
-
 ## Citations
 
 - Phillips, P.C.B., Wu, Y., Yu, J. (2011). *Explosive Behavior in the 1990s
